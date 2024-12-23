@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC🌹❤</title>
+    <link rel="icon" href="img/icono.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f3f4;
+            color: #202124;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            color: #4285f4;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #202124;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .sidebar a:hover {
+            background-color: #e8f0fe;
+        }
+
+        .content {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        .email-list {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .email-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .email-item:last-child {
+            border-bottom: none;
+        }
+
+        .email-item .email-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email-item .email-details span {
+            font-size: 1rem;
+        }
+
+        .email-item .email-details .subject {
+            font-weight: bold;
+        }
+
+        .email-item .email-details .preview {
+            color: #5f6368;
+            font-size: 0.9rem;
+        }
+
+        .email-item .email-time {
+            color: #5f6368;
+            font-size: 0.8rem;
+        }
+
+        /* CSS responsivo */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .sidebar a {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .email-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .email-item .email-time {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .logo {
+                font-size: 1.2rem;
+            }
+
+            .email-item .email-details span {
+                font-size: 0.9rem;
+            }
+
+            .email-item .email-details .preview {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">📥 Bandeja de entrada</h1>
+    </div>
+    <!-- <div class="sidebar">
+        <a href="#">📥 Bandeja de entrada</a>
+        <a href="#">⭐ Destacados</a>
+        <a href="#">📤 Enviados</a>
+        <a href="#">🗑️ Eliminados</a>
+        <a href="#">⚙️ Configuración</a>
+    </div> -->
+    <div class="content">
+        <div class="email-list">
+            <div class="email-item">
+                <a href="carta.html" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="email-details">
+                        <span class="sender">Carlos López 😘</span>
+                        <span class="subject">Feliz Navidad muñequita</span>
+                        <span class="preview">Esta es su carta navideña espero que lo disfrute.....</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
